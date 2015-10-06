@@ -92,16 +92,4 @@ antigen bundle common-aliases
 antigen theme gnzh
 antigen apply
 
-DEBUG_PROXY_REPO=/User/$USER/repo/debug-proxy
-
-alias ppp='python $DEBUG_PROXY_REPO/pretty-debug-proxy-output.py'
-
-CORP_PROXY=breastedcrested.corp.gq1.yahoo.com:1080
-PROD_PROXY=debugpxy.index.search.yahoo.com:4080
-
-alias curlp='curl --proxy $CORP_PROXY --insecure '
-
-function debugProxy() {
-     echo \"$1\" -H \"cookie: `cat $2`\"
-}
 
